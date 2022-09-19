@@ -1,0 +1,25 @@
+.h-65 {
+  margin-left: 10%;
+  width: 75%;
+}
+
+@media screen and (max-width: 770px) {
+  .search button {
+    width: 48px;
+    // width: 16px;
+    // height: 16px;
+  }
+  .h-65 {
+    width: 65%;
+  }
+  .cart {
+    position: fixed;
+    right: 36px;
+    top: 120px;
+  }
+}
+
+.searchhr {
+  border: 2px solid black;
+  margin: 0;
+}

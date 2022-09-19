@@ -1,0 +1,61 @@
+//自訂變數
+
+@import "../styles/_variables.scss";
+//導入icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+//倒入boot自訂變數需求程式碼
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap//scss/variables";
+//倒入bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//倒入頁面自定css
+@import "./login";
+@import "./nav";
+@import "./404";
+@import "./search";
+@import "./home";
+@import "./jump"; //如友修改程式碼需求參考以下
+@import "./mycarts";
+@import "./profilepage";
+@import "./profilerwd"; // bootstrap 的 utilites
+// @import "../node_modules/bootstrap/scss/utilities";
+
+// 自定義的 utilites
+// $utilities: (
+//   "height": (
+//     property: height,
+//     class: h,
+// class 對應前綴
+//     responsive: true,
+//     values: (
+//       25: 25%,
+//       50: 50%,
+//       75: 75%,
+//       100: 100%,
+//       auto: auto,
+//     ),
+//   ),
+// );
+//上面打完就能用以下自定
+// 輸出： .h-25 {
+//   height: 25%;
+// }
+// .h-50 {
+//   height: 50%;
+// }
+// .h-75 {
+//   height: 75%;
+// }
+// .h-100 {
+//   height: 100%;
+// }
+// .h-auto {
+//   height: auto;
+// }
+
+// utilites/api 一定要在最後引入，會用到 mixins 跟 variables 定義的內容
+// @import "../node_modules/bootstrap/scss/utilities/api";

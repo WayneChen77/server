@@ -1,0 +1,42 @@
+.profilePage {
+  height: 100%;
+  background-color: rgb(233, 233, 238);
+  min-height: 90vh;
+
+  .profileLeft {
+    color: gray;
+    margin-bottom: 1.5rem;
+    .active {
+      color:black;
+    }
+    h1 svg {
+      border-radius: 50%;
+      background-color: white;
+      margin-bottom: 2rem;
+      vertical-align: text-top;
+    }
+    h3 .logout {
+      position: absolute;
+      bottom: 20%;
+      text-decoration: none;
+    }
+  }
+  .profileRight {
+    min-height: 50vh;
+    position: relative;
+    background-color: white;
+    margin-bottom: 2rem;
+    hr {
+      margin-bottom: 0rem;
+    }
+    .changeUser {
+      width: 10%;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+  .profileRight2 {
+    display: block;
+  }
+}

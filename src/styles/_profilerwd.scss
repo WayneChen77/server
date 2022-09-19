@@ -1,0 +1,24 @@
+.phonerwd2 {
+  display: none;
+}
+
+@media screen and (max-height: 650px) {
+  .logout {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .profileLeft {
+    display: none;
+  }
+  .phonerwd1 {
+    display: none;
+  }
+  .phonerwd2 {
+    display: block;
+  }
+  .cart {
+    z-index: -1;
+  }
+}

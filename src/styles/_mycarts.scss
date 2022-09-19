@@ -1,0 +1,108 @@
+.mycarts {
+  text-align: center;
+}
+//結帳按鈕
+.checkbutton {
+  cursor: pointer;
+}
+.checkbutton:active {
+  color: blue;
+  background-color: #999;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.btn-numbox li {
+  float: left;
+  position: relative;
+  left: 70px;
+}
+
+.btn-numbox .count .num-jian,
+.input-num,
+.num-jia {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  border: 1px solid #3c3a3a;
+}
+.btn-numbox .count .input-num {
+  width: 58px;
+  height: 26px;
+  color: #333;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.phonetype {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .phonetype {
+    display: block;
+  }
+  .comtype {
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .btn-numbox li {
+    left: 30px;
+  }
+}
+
+//已下暫時無用
+// .btn-numbox li .number,
+// .kucun {
+//   display: inline-block;
+//   font-size: 12px;
+//   color: #808080;
+//   vertical-align: sub;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// a:hover {
+//   cursor: pointer;
+//   text-decoration: none;
+// }
+
+// a:link {
+//   text-decoration: none;
+// }
+
+// img {
+//   vertical-align: middle;
+// }
+
+// .btn-numbox {
+//   overflow: hidden;
+//   margin-top: 20px;
+// }
+
+// .btn-numbox .count {
+//   overflow: hidden;
+//   margin: 0 16px 0 -20px;
+// }

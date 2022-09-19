@@ -1,0 +1,140 @@
+.wrapper {
+  position: relative;
+
+  .panel {
+    z-index: 1;
+    width: 25rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    transform: translateX(50rem);
+    transition: all 1s ease-in-out;
+  }
+}
+
+.wrapperactive {
+  z-index: 1;
+  .over-layer {
+    display: block;
+  }
+  .panel {
+    transform: translateX(0);
+  }
+}
+.over-layer {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.head {
+  padding: 0 0.5rem;
+  text-align: right;
+  .close {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    line-height: 1;
+    margin-right: 4px;
+  }
+}
+.has-text-contered {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 0;
+}
+//patchcommonent
+.delebutton {
+  position: relative;
+  right: -50%;
+}
+
+// .wrapper {
+//   position: relative;
+//   z-index: 2;
+//   .panel {
+//     transition: all 0.3s ease-in-out;
+//     transform: translateX(25rem);
+//     width: 25rem;
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     background: #fff;
+//     z-index: 2;
+//   }
+//   &.wrapperactive {
+//     .over-layer {
+//       display: block;
+//     }
+//     .panel {
+//       transform: translateX(0);
+//     }
+//   }
+// }
+
+// .over-layer {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background: rgba(0, 0, 0, 0.4);
+//   z-index: 1;
+// }
+// .panel {
+//   width: 25rem;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   background: #fff;
+//   box-shadow: -3px 0 3px rgba(0, 0, 0, 0.04);
+//   transform: translateX(25rem);
+//   transition: all 0.3s ease-in-out;
+//   z-index: 99;
+//   .head {
+//     padding: 0.5rem;
+//     text-align: right;
+//     .close {
+//       font-size: 24px;
+//       font-weight: 600;
+//       color: #333;
+//       cursor: pointer;
+//       line-height: 1;
+//       margin-right: 4px;
+//     }
+//   }
+// }
+@media screen and (max-width: 670px) {
+  .wrapper .panel {
+    width: 20rem;
+  }
+}
+@media screen and (max-height: 430px) {
+  .wrapper .panel {
+    width: 50rem;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media screen and (max-height: 370px) {
+  .g-3 .col-12 button {
+    transform: translate(80vw, -50%);
+  }
+  .panel {
+    padding-left: 2.5rem;
+  }
+}
